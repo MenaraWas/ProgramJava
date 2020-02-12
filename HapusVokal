@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+// class hapusHurufVOkal{
+//     String kata;
+    
+//     kata = kata.replaceAll("[a,i,u,e,o]", "");
+    
+// }
+public class vokalKonsonan{
+    public static void main(final String[] args) {
+        String teks;
+
+        // hapusHurufVOkal vokal = new hapusHurufVOkal();
+        final Scanner input = new Scanner(System.in);
+
+        System.out.println("Masukkan kata-kata kamu : ");
+        teks = input.nextLine();
+        System.out.println("");
+        System.out.println("hasil kata-kata kamu tanpa vokal adalah : ");
+
+        teks = teks.replaceAll("[a,i,u,e,o]", "");
+
+        final String hasil = teks;
+        System.out.println(hasil);
+        
+        
+    }
+}
